@@ -169,17 +169,31 @@ tr {
 
 footer {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   margin-top: var(--space-7);
   margin-bottom: var(--space-3);
 }
 
 .btn {
-  background: var(--colorGreenApron);
+  background: var(--colorGreenDarkApron);
   color: var(--colorWhite);
   border-radius: 5rem;
   text-decoration: none;
   padding: 1rem 2rem;
   font-size: 2rem;
   font-weight: 700;
+}
+
+.btn:hover {
+  background: var(--colorGreenApron);
+}
+
+.btn-reset {
+  background: transparent;
+  color: var(--colorBlack);
+  border: 1px solid var(--colorBlack);
+}
+
+.btn-reset:hover {
+  background: var(--colorGreenLightSecondary);
 }
