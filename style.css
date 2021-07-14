@@ -29,7 +29,7 @@
   --primary-font: 'Open Sans', sans-serif;
   --display-font: 'Source Serif Pro', serif;
   --font-size-mobile: 1.4rem;
-  --font-size-desktop: 1.6rem;
+  /* --font-size-desktop: 1.6rem; */
 
   /* Spacing */
   --space-1: 0.4rem;
@@ -43,9 +43,9 @@
   --space-9: 6.4rem;
 
   /* Media Queries */
-  --breakpointSm: 480px;
+  /* --breakpointSm: 480px;
   --breakpointMd: 768px;
-  --breakpointLg: 1024px;
+  --breakpointLg: 1024px; */
 }
 
 /* Basic Reset */
@@ -83,7 +83,7 @@ body {
 
 nav {
   display: block;
-  height: 2.5rem;
+  height: var(--space-4);
   margin-top: var(--space-7);
 }
 
