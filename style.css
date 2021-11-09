@@ -181,11 +181,18 @@ footer {
   font-size: 2rem;
   font-weight: 700;
   cursor: pointer;
+  box-shadow: 0.1px 2.7px 6px rgba(0, 0, 0, 0.045),
+    0.3px 6.5px 14.5px rgba(0, 0, 0, 0.065),
+    0.6px 12.1px 27.3px rgba(0, 0, 0, 0.08),
+    1.1px 21.7px 48.7px rgba(0, 0, 0, 0.095),
+    2.1px 40.5px 91.1px rgba(0, 0, 0, 0.115), 5px 97px 218px rgba(0, 0, 0, 0.16);
+
+  transition: transform 0.2s ease-in-out;
 }
 
 .btn:hover {
   background: var(--colorGreenApron);
-  transform: translateY(-0.5rem);
+  transform: translateY(-0.4rem);
 }
 
 .btn-reset {
