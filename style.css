@@ -1,206 +1,205 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Source+Serif+Pro:wght@400;700;900&display=swap');
 
 :root {
-  /* Color */
-  --colorWhite: #ffffff;
-  --colorBlack: #000000;
-  --colorGreenStarbucks: #00653e;
-  --colorGreenApron: #00a862;
-  --colorGreenDarkApron: #008248;
-  --colorGreenLightSecondary: rgba(212, 233, 226, 0.33);
+	/* Color */
+	--colorWhite: #ffffff;
+	--colorBlack: #000000;
+	--colorPurpleCB: #532d6d;
+	--colorPurpleCB-light: #77419b;
+	--colorPurpleCB-light-secondary: hsla(276, 41%, 43%, 0.33);
 
-  /* Typography */
-  --primary-font: 'Open Sans', sans-serif;
-  --display-font: 'Source Serif Pro', serif;
-  --font-size: 1.4rem;
+	/* Typography */
+	--primary-font: 'Open Sans', sans-serif;
+	--display-font: 'Source Serif Pro', serif;
+	--font-size: 1.4rem;
 
-  /* Spacing */
-  --space-1: 0.4rem;
-  --space-2: 0.8rem;
-  --space-3: 1.6rem;
-  --space-4: 2.4rem;
-  --space-5: 3.2rem;
-  --space-6: 4rem;
-  --space-7: 4.8rem;
-  --space-8: 5.6rem;
-  --space-9: 6.4rem;
+	/* Spacing */
+	--space-1: 0.4rem;
+	--space-2: 0.8rem;
+	--space-3: 1.6rem;
+	--space-4: 2.4rem;
+	--space-5: 3.2rem;
+	--space-6: 4rem;
+	--space-7: 4.8rem;
+	--space-8: 5.6rem;
+	--space-9: 6.4rem;
 }
 
 /* Basic Reset */
 *,
 *::before,
 *::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
 }
 
 html {
-  box-sizing: border-box;
-  font-family: var(--primary-font);
-  font-size: 62.5%;
-  /* 10px/16px = 62.5% -> 1rem = 10px */
+	box-sizing: border-box;
+	font-family: var(--primary-font);
+	font-size: 62.5%;
+	/* 10px/16px = 62.5% -> 1rem = 10px */
 }
 
 /* Layout */
 body {
-  font-size: var(--font-size);
-  line-height: 1.5;
-  letter-spacing: -0.01em;
-  background-color: var(--colorWhite);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='100' viewBox='0 0 600 100'%3E%3Cg stroke='%23FFF' stroke-width='0' stroke-miterlimit='10' %3E%3Ccircle fill='%23037B79' cx='0' cy='0' r='50'/%3E%3Ccircle fill='%2392DEBA' cx='100' cy='0' r='50'/%3E%3Ccircle fill='%23FFFFD8' cx='200' cy='0' r='50'/%3E%3Ccircle fill='%23CAF2FF' cx='300' cy='0' r='50'/%3E%3Ccircle fill='%236FCCFF' cx='400' cy='0' r='50'/%3E%3Ccircle fill='%23006EB4' cx='500' cy='0' r='50'/%3E%3Ccircle fill='%23037B79' cx='600' cy='0' r='50'/%3E%3Ccircle cx='-50' cy='50' r='50'/%3E%3Ccircle fill='%2353ac9a' cx='50' cy='50' r='50'/%3E%3Ccircle fill='%23ceefc1' cx='150' cy='50' r='50'/%3E%3Ccircle fill='%23ffffff' cx='250' cy='50' r='50'/%3E%3Ccircle fill='%239de0fe' cx='350' cy='50' r='50'/%3E%3Ccircle fill='%233e9cda' cx='450' cy='50' r='50'/%3E%3Ccircle fill='%2300789c' cx='550' cy='50' r='50'/%3E%3Ccircle cx='650' cy='50' r='50'/%3E%3Ccircle fill='%23037B79' cx='0' cy='100' r='50'/%3E%3Ccircle fill='%2392DEBA' cx='100' cy='100' r='50'/%3E%3Ccircle fill='%23FFFFD8' cx='200' cy='100' r='50'/%3E%3Ccircle fill='%23CAF2FF' cx='300' cy='100' r='50'/%3E%3Ccircle fill='%236FCCFF' cx='400' cy='100' r='50'/%3E%3Ccircle fill='%23006EB4' cx='500' cy='100' r='50'/%3E%3Ccircle fill='%23037B79' cx='600' cy='100' r='50'/%3E%3Ccircle cx='50' cy='150' r='50'/%3E%3Ccircle cx='150' cy='150' r='50'/%3E%3Ccircle cx='250' cy='150' r='50'/%3E%3Ccircle cx='350' cy='150' r='50'/%3E%3Ccircle cx='450' cy='150' r='50'/%3E%3Ccircle cx='550' cy='150' r='50'/%3E%3C/g%3E%3C/svg%3E");
+	font-size: var(--font-size);
+	line-height: 1.5;
+	letter-spacing: -0.01em;
+	background-color: var(--colorWhite);
+	background-image: url(./Assets/images/pattern-randomized.svg);
 }
 
 .container {
-  display: grid;
-  place-content: start center;
-  grid-template-rows: repeat(3);
-  height: 100vh;
-  width: 100vw;
+	display: grid;
+	place-content: start center;
+	grid-template-rows: repeat(3);
+	height: 100vh;
+	width: 100vw;
 }
 
 nav {
-  display: block;
-  height: var(--space-4);
-  margin-top: var(--space-7);
+	display: block;
+	height: var(--space-3);
+	margin-top: var(--space-7);
 }
 
 nav::before {
-  border-bottom: 1px solid var(--colorBlack);
-  content: '';
-  display: block;
-  width: 100%;
+	border-bottom: 1px solid var(--colorBlack);
+	content: '';
+	display: block;
+	width: 100%;
 }
 
 .logo {
-  display: block;
-  position: relative;
-  top: -2.5rem;
-  margin: 0 auto;
+	display: block;
+	position: relative;
+	top: -2.5rem;
+	margin: 0 auto;
 }
 
 .card {
-  display: grid;
-  grid-template-rows: repeat(3);
-  margin-top: var(--space-7);
-  background: var(--colorWhite);
-  border-radius: 0.5rem;
-  width: 95vw;
-  box-shadow: 0 0 0.5px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
-  overflow: scroll;
-  scrollbar-width: none;
+	display: grid;
+	grid-template-rows: repeat(3);
+	margin-top: var(--space-2);
+	background: var(--colorWhite);
+	border-radius: 0.5rem;
+	width: 95vw;
+	box-shadow: 0 0 0.5px 0 rgba(0, 0, 0, 0.14), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+	overflow: scroll;
+	scrollbar-width: none;
 }
 
 @media screen and (min-width: 768px) {
-  .card {
-    width: 50vw;
-  }
+	.card {
+		width: 50vw;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-  .card {
-    width: 35vw;
-  }
+	.card {
+		width: 35vw;
+	}
 }
 
 @media screen and (min-width: 1366px) {
-  .card {
-    width: 25vw;
-  }
+	.card {
+		width: 25vw;
+	}
 }
 
 .heading {
-  padding: 2rem;
-  background: var(--colorGreenStarbucks);
+	padding: 2rem;
+	background: var(--colorPurpleCB);
 }
 
 h2 {
-  font-family: var(--display-font);
-  color: var(--colorGreenStarbucks);
-  font-size: 1.5rem;
+	font-family: var(--display-font);
+	color: var(--colorPurpleCB);
+	font-size: 1.5rem;
 }
 
 fieldset {
-  color: var(--colorWhite);
-  border: 1px solid var(--colorWhite);
-  border-radius: 1rem;
-  padding: 1rem;
+	color: var(--colorWhite);
+	border: 1px solid var(--colorWhite);
+	border-radius: 1rem;
+	padding: 1rem;
 }
 
 fieldset span {
-  font-family: var(--display-font);
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 0 0.5rem;
+	font-family: var(--display-font);
+	font-size: 2rem;
+	font-weight: 700;
+	padding: 0 0.5rem;
 }
 
 .result {
-  padding: 2rem;
+	padding: 2rem;
 }
 
 .goal {
-  color: var(--colorBlack);
-  border: 1px solid var(--colorBlack);
+	color: var(--colorBlack);
+	border: 1px solid var(--colorBlack);
 }
 
 .goal:not(:first-child) {
-  margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 input {
-  width: 10rem;
+	width: 10rem;
 }
 
 table {
-  width: 100%;
+	width: 100%;
 }
 
 tr:not(:first-child) {
-  margin-top: 1rem;
+	margin-top: 1rem;
 }
 
 tr {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  margin-top: var(--space-7);
-  margin-bottom: var(--space-3);
+	display: flex;
+	justify-content: space-between;
+	margin-top: var(--space-3);
+	margin-bottom: var(--space-3);
 }
 
 .btn {
-  background: var(--colorGreenDarkApron);
-  color: var(--colorWhite);
-  border: hidden;
-  border-radius: 5rem;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  font-size: 2rem;
-  font-weight: 700;
-  cursor: pointer;
-  box-shadow: 0.1px 2.7px 6px rgba(0, 0, 0, 0.045),
-    0.3px 6.5px 14.5px rgba(0, 0, 0, 0.065),
-    0.6px 12.1px 27.3px rgba(0, 0, 0, 0.08),
-    1.1px 21.7px 48.7px rgba(0, 0, 0, 0.095),
-    2.1px 40.5px 91.1px rgba(0, 0, 0, 0.115), 5px 97px 218px rgba(0, 0, 0, 0.16);
+	background: var(--colorPurpleCB);
+	color: var(--colorWhite);
+	border: hidden;
+	border-radius: 5rem;
+	text-decoration: none;
+	padding: 1rem 2rem;
+	font-size: 2rem;
+	font-weight: 700;
+	cursor: pointer;
+	box-shadow: 0.1px 2.7px 6px rgba(0, 0, 0, 0.045),
+		0.3px 6.5px 14.5px rgba(0, 0, 0, 0.065),
+		0.6px 12.1px 27.3px rgba(0, 0, 0, 0.08),
+		1.1px 21.7px 48.7px rgba(0, 0, 0, 0.095),
+		2.1px 40.5px 91.1px rgba(0, 0, 0, 0.115), 5px 97px 218px rgba(0, 0, 0, 0.16);
 
-  transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
 
 .btn:hover {
-  background: var(--colorGreenApron);
-  transform: translateY(-0.4rem);
+	background: var(--colorPurpleCB-light);
+	transform: translateY(-0.4rem);
 }
 
 .btn-reset {
-  background: transparent;
-  color: var(--colorBlack);
-  border: 1px solid var(--colorBlack);
+	background: transparent;
+	color: var(--colorBlack);
+	border: 1px solid var(--colorBlack);
 }
 
 .btn-reset:hover {
-  background: var(--colorGreenLightSecondary);
+	background: var(--colorPurpleCB-light-secondary);
 }

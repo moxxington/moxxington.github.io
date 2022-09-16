@@ -1,103 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>COSD Tool</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <img
-          src="./Assets/images/logo.svg"
-          alt="logo"
-          class="logo"
-          height="50"
-          width="50"
-        />
-      </nav>
-      <article class="card">
-        <header class="heading">
-          <fieldset class="setter">
-            <legend><span>Goal Setter </span></legend>
-            <table>
-              <tr>
-                <td>Sales</td>
-                <td><input type="text" id="sales" /></td>
-              </tr>
-              <tr>
-                <td>COSD</td>
-                <td><input type="text" id="cosd" /></td>
-              </tr>
-              <tr>
-                <td>Days Open</td>
-                <td><input type="text" id="daysOpen" /></td>
-              </tr>
-              <tr>
-                <td>Hours Open</td>
-                <td><input type="text" id="hoursOpen" /></td>
-              </tr>
-              <tr>
-                <td>Goal%</td>
-                <td><input type="text" id="goal" /></td>
-              </tr>
-            </table>
-          </fieldset>
-        </header>
-        <div class="result">
-          <fieldset class="goal">
-            <legend><span>Sales Goal </span></legend>
-            <table>
-              <tr>
-                <td>Weekly Goal</td>
-                <td><input type="text" id="weeklySales" /></td>
-              </tr>
-              <tr>
-                <td>Daily Sales Needed</td>
-                <td><input type="text" id="dailySales" /></td>
-              </tr>
-              <tr>
-                <td>Hourly Sales Needed</td>
-                <td><input type="text" id="hourlySales" /></td>
-              </tr>
-              <tr>
-                <td>1/2 Hour Sales Needed</td>
-                <td><input type="text" id="halfHourSales" /></td>
-              </tr>
-            </table>
-          </fieldset>
 
-          <fieldset class="goal">
-            <legend><span>COSD Goal </span></legend>
-            <table>
-              <tr>
-                <td>Daily Average Goal</td>
-                <td><input type="text" id="weeklyCOSD" /></td>
-              </tr>
-              <tr>
-                <td>Daily COSD Needed</td>
-                <td><input type="text" id="dailyCOSD" /></td>
-              </tr>
-              <tr>
-                <td>Hourly COSD Needed</td>
-                <td><input type="text" id="hourlyCOSD" /></td>
-              </tr>
-              <tr>
-                <td>1/2 Hour COSD Needed</td>
-                <td><input type="text" id="halfHourCOSD" /></td>
-              </tr>
-            </table>
-          </fieldset>
-        </div>
-      </article>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>COSD Tool</title>
+</head>
 
-      <footer>
-        <button class="btn btn-reset">Start Over</button>
-        <button class="btn btn-cta">Calculate</button>
-      </footer>
-    </div>
-    <script src="./script.js"></script>
-  </body>
+<body>
+  <div class="container">
+    <nav>
+      <img src="./Assets/images/cb-logo.svg" alt="logo" class="logo" height="20" width="281" />
+    </nav>
+    <article class="card">
+      <header class="heading">
+        <fieldset class="setter">
+          <legend><span>Goal Setter </span></legend>
+          <table>
+            <tr>
+              <td>Sales</td>
+              <td><input type="text" id="sales" /></td>
+            </tr>
+            <tr>
+              <td>COSD</td>
+              <td><input type="text" id="cosd" /></td>
+            </tr>
+            <tr>
+              <td>Days Open</td>
+              <td><input type="text" id="daysOpen" /></td>
+            </tr>
+            <tr>
+              <td>Hours Open</td>
+              <td><input type="text" id="hoursOpen" /></td>
+            </tr>
+            <tr>
+              <td>Goal%</td>
+              <td><input type="text" id="goal" /></td>
+            </tr>
+          </table>
+        </fieldset>
+      </header>
+      <div class="result">
+        <fieldset class="goal">
+          <legend><span>Sales Goal </span></legend>
+          <table>
+            <tr>
+              <td>Weekly Goal</td>
+              <td><input type="text" id="weeklySales" /></td>
+            </tr>
+            <tr>
+              <td>Daily Sales Needed</td>
+              <td><input type="text" id="dailySales" /></td>
+            </tr>
+            <tr>
+              <td>Hourly Sales Needed</td>
+              <td><input type="text" id="hourlySales" /></td>
+            </tr>
+            <tr>
+              <td>1/2 Hour Sales Needed</td>
+              <td><input type="text" id="halfHourSales" /></td>
+            </tr>
+          </table>
+        </fieldset>
+
+        <fieldset class="goal">
+          <legend><span>COSD Goal </span></legend>
+          <table>
+            <tr>
+              <td>Daily Average Goal</td>
+              <td><input type="text" id="weeklyCOSD" /></td>
+            </tr>
+            <tr>
+              <td>Daily COSD Needed</td>
+              <td><input type="text" id="dailyCOSD" /></td>
+            </tr>
+            <tr>
+              <td>Hourly COSD Needed</td>
+              <td><input type="text" id="hourlyCOSD" /></td>
+            </tr>
+            <tr>
+              <td>1/2 Hour COSD Needed</td>
+              <td><input type="text" id="halfHourCOSD" /></td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+    </article>
+
+    <footer>
+      <button class="btn btn-reset">Start Over</button>
+      <button class="btn btn-cta">Calculate</button>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
 </html>
