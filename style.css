@@ -60,7 +60,7 @@ body {
 
 nav {
 	display: block;
-	height: var(--space-3);
+	height: var(--space-7);
 	margin-top: var(--space-7);
 }
 
@@ -143,7 +143,7 @@ fieldset span {
 }
 
 .goal:not(:first-child) {
-	margin-top: 2rem;
+	margin-top: 3rem;
 }
 
 input {
